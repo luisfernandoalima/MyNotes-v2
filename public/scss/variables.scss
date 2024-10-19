@@ -1,0 +1,21 @@
+// Cores
+$azul1: #10454f;
+$azul2: #506266;
+$cinza1: #818274;
+$cinza2: #a3ab78;
+$cinza3: #c2c2c2;
+$verde: #bde038;
+$verde2: rgb(0, 212, 0);
+$vermelho: rgb(252, 48, 48);
+$laranja: #d96941;
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+// Mixins
+@mixin flex($align, $justify, $direction) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "mynotesv2",
+  "version": "1.0.0",
+  "description": "Sistema de recados utilizando o MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Fernando Alves de Lima",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "express-handlebars": "^8.0.1",
+    "mongoose": "^8.7.2"
+  }
+}

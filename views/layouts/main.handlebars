@@ -1,0 +1,41 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{tituloPagina}}</title>
+    {{! FontAwesome }}
+    <script
+      src="https://kit.fontawesome.com/b95d68622e.js"
+      crossorigin="anonymous"
+    ></script>
+    {{! CSS }}
+    <link rel="stylesheet" href="/css/main.css" />
+    {{#if css}}
+      <link rel="stylesheet" href="/css/{{css}}" />
+    {{/if}}
+  </head>
+  <body>
+    <header>
+      <h1>My Notes</h1>
+      <nav>
+        <ul type="none">
+          <li><a href="/">Home</a></li>
+          <li><a href="/cad">Nova Nota</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      {{{body}}}
+    </main>
+    <footer>
+      <p>Desenvolvido por:</p>
+      <p><a
+          href="https://luisfernandoalima.github.io/portfolio/"
+          target="_blank"
+        >Luis Fernando Alves de Lima</a></p>
+      <p><a
+          href="mailto:lima.luisfernando.dev@gmail.com"
+        >lima.luisfernando.dev@gmail.com</a></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+@import "./variables.scss";
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: $cinza3;
+
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  @include flex(center, space-between, row);
+  background-color: $azul1;
+  padding: 10px 15px;
+  h1 {
+    font-family: "JetBrains Mono";
+    color: $verde;
+  }
+
+  nav {
+    width: 200px;
+    ul {
+      @include flex(center, space-around, row);
+    }
+
+    a {
+      color: #fff;
+      font-size: 1.3em;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+    }
+  }
+}
+
+footer {
+  font-size: 1.1em;
+  background-color: $azul1;
+  padding: 5px 15px;
+  p {
+    color: #fff;
+    padding-bottom: 3px;
+    a {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

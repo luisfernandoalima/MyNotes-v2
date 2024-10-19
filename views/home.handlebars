@@ -1,0 +1,16 @@
+<h2>Página Inicial</h2>
+<div class="post-area">
+  {{#each posts}}
+    <div class="post-card">
+      <div class="post-header">
+        <div class="post-title">
+          <h3>{{titulo}}</h3>
+        </div>
+        <a href="/delete/{{id}}"><i class="fa-solid fa-trash"></i></a>
+      </div>
+      <div class="post-body">
+        <p>{{conteudo}}</p>
+      </div>
+    </div>
+  {{/each}}
+</div>
